@@ -1,7 +1,7 @@
 
-import java.util.* ;
-public class ALL{
-    public static void main(String[] args) {
+//import java.util.* ;
+// public class ALL{
+//     public static void main(String[] args) {
                                                                       //print 2D array
         // int [] [] arr = {
         //     {1,2,3},
@@ -82,35 +82,53 @@ public class ALL{
                             //     System.out.println("minimum element "+ min);
 
                                                              //lenear search
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter the size of array ");
-        int n = in.nextInt();
-        int [] arr = new int[n] ;
-        System.out.println("enter element");
-        for(int i=0; i<n; i++){
-            arr[i]= in.nextInt();
+        // Scanner in = new Scanner(System.in);
+        // System.out.println("enter the size of array ");
+        // int n = in.nextInt();
+        // int [] arr = new int[n] ;
+        // System.out.println("enter element");
+        // for(int i=0; i<n; i++){
+        //     arr[i]= in.nextInt();
 
+        // }
+        // System.out.println("enter number to search");
+        // int x = in.nextInt();
+        //    boolean found = false;
+        //    for(int val : arr){
+        //     if( val==x){
+        //         found = true;
+        //         break;
+        //     }
+
+
+        //    }
+        //    if(found){
+        //     System.out.println(x + " present ");
+        //    }
+        //    else
+        //    {
+        //     System.out.println(x + " not present");
+        //    }
+
+//method(function) non static
+
+        //   public class ALL{
+        //      void sum (int a){
+        //         System.out.println(a);
+        //     }
+        //     public static void main(String[] args) {
+        //         ALL obj=new ALL();
+        //         obj.sum (5);
+        //     }
+        //   }                                                   
+    //global variable
+        public class ALL{
+            int a=5;
+           
+           public static void main(String[] args) {
+            ALL obj=  new ALL();
+            System.out.println(obj.a);
+            // ALL obj=  new ALL();
+              // obj.sum (5);
+           }
         }
-        System.out.println("enter number to search");
-        int x = in.nextInt();
-           boolean found = false;
-           for(int val : arr){
-            if( val==x){
-                found = true;
-                break;
-            }
-
-
-           }
-           if(found){
-            System.out.println(x + " present ");
-           }
-           else
-           {
-            System.out.println(x + " not present");
-           }
-
-
-                                                             
-    }
-}
