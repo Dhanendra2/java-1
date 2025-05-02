@@ -122,13 +122,69 @@
         //     }
         //   }                                                   
     //global variable
-        public class ALL{
-            int a=5;
+        // public class ALL{
+        //     int a=5;
            
-           public static void main(String[] args) {
-            ALL obj=  new ALL();
-            System.out.println(obj.a);
-            // ALL obj=  new ALL();
-              // obj.sum (5);
-           }
+        //    public static void main(String[] args) {
+        //     ALL obj=  new ALL();
+        //     System.out.println(obj.a);
+        //     // ALL obj=  new ALL();
+        //       // obj.sum (5);
+           
+
+        // bullle sort
+        // public class ALL{
+        //     static void bubblesort(int[] arr){
+        //         for(int i=0; i<arr.length-1; i++){
+        //             for(int j=0; j<arr.length-i-1; j++){
+        //                 if(arr[j]= arr[j+1]){
+        //                     int temp=arr[j];
+        //                     arr[j+1]=temp;
+        //                 }
+
+
+        //             }
+        //         }
+        //         System.err.println(arr[i]);
+        //     }
+        // }    
+        //  public static void main(String[] args){
+        //     int[] arr = {1,4,6,3,7};
+            
+        //     ALL obj=new ALL();
+        //     obj.bubblesort(arr[j]);
+            
+        // }
+    
+                                                     // constructor
+    class student{
+
+          String firstname =" dhanendra ";
+        int rollnum = 56;
+
+        student(String firstname , int rollnum )
+        {
+           this.firstname =  firstname ;
+           rollnum = rollnum ;
+
+            System.out.println(firstname+" " + rollnum);
+
+
         }
+    }
+        public class ALL{
+
+            public static void main(String[] args) {
+                
+            
+                student obj= new student( "rahul" , 23);
+                student obj1= new student( "mohan", 24);
+                 System.out.println(obj.firstname);
+                 System.out.println(obj.rollnum);
+                 
+
+            }
+        }
+        
+
+    
