@@ -154,37 +154,48 @@
         //     ALL obj=new ALL();
         //     obj.bubblesort(arr[j]);
             
-        // }
+        // }*
     
-                                                     // constructor
-    class student{
+                                                     // constructor( two or more conductor)
 
-          String firstname =" dhanendra ";
-        int rollnum = 56;
+   
+        //inheritance
+        // class employe{
+        //     void work() {
+        //         System.out.println("employee is working");
 
-        student(String firstname , int rollnum )
-        {
-           this.firstname =  firstname ;
-           rollnum = rollnum ;
+        //     }
+        // }
+        // class manager extand employee{
+        //     void attendmetting(){
+        //         System.out.println("manager is attend metting ");
+        //     }
+        // }
+        // public class ALL{
+        //     public static void main(String[],args){
+        //         manager m = new manager();
+        //         m.work();
+        //         m.attendmetting();
+        //     }
+        // }
+        // // public class ALL{
+        // //     public static void main(String[] args){
+        // //         manager m= new manager();
+        // //         m.work();
+        // //         m.attend metting();
+        // //     }
+        // // }
+import java.util.ArrayList;
 
-            System.out.println(firstname+" " + rollnum);
-
-
+    class ALL{
+        public static void main(String[] args) {
+ArrayList<String> arr=new ArrayList<>();
+arr.add("hello");
+arr.add("hiii");
+arr.set(1,"byyy");
+arr.add(0,"byiii");
+arr.add("hii");
+arr.remove(0);
+System.out.println(arr);            
         }
     }
-        public class ALL{
-
-            public static void main(String[] args) {
-                
-            
-                student obj= new student( "rahul" , 23);
-                student obj1= new student( "mohan", 24);
-                 System.out.println(obj.firstname);
-                 System.out.println(obj.rollnum);
-                 
-
-            }
-        }
-        
-
-    
