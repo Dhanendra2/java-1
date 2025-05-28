@@ -185,17 +185,99 @@
         // //         m.attend metting();
         // //     }
         // // }
-import java.util.ArrayList;
 
-    class ALL{
-        public static void main(String[] args) {
-ArrayList<String> arr=new ArrayList<>();
-arr.add("hello");
-arr.add("hiii");
-arr.set(1,"byyy");
-arr.add(0,"byiii");
-arr.add("hii");
-arr.remove(0);
-System.out.println(arr);            
-        }
+        //                                                                    27/05/2025
+// import java.util.ArrayList;
+
+//     class ALL{
+//         public static void main(String[] args) {
+// ArrayList<String> arr=new ArrayList<>();
+// arr.add("hello");
+// arr.add("hiii");
+// arr.set(1,"byyy");
+// arr.add(0,"byiii");
+// arr.add("hii");
+// arr.remove(0);
+// System.out.println(arr);            
+//         }
+//     }
+// import java.util.LinkedList;
+// class ALL{
+//     public static void main(String[] args) {
+//         LinkedList<Integer> arr= new LinkedList<>();
+//         arr.add(4);
+//         arr.add( 5);
+//        // arr.remove(4);
+//         System.out.println(arr.contains(4));
+//     }
+// }
+                                                          //print number between 100 to 200
+// import java.util.LinkedList;
+// class ALL{
+//     public static void main(String[] args) {
+//         LinkedList<Integer> arr= new LinkedList<>();
+//         for(int i=0;i<1000;i++){
+//             if(i>100 & i<200){
+//           arr.add(i);
+//         }
+//     }
+        
+//         System.out.println(arr);
+//     }
+// }
+
+// import java.util.HashSet;
+//     public static void main(String[] args) {
+//         int[] arr = { 1,2,2,3,3,4,5,6};
+//          HashSet< Integer> set= new HashSet<>();
+//           for(int i=0;i< arr.length;i++){
+//     set.add(arr[i]);
+//     //       arr.add(i);
+//     //     }
+//     // }
+//           }
+//     // set.add("ba");
+     
+//         System.out.println(set);
+//     }
+
+
+// import java.util.HashSet;
+//     public static void main(String[] args) {
+//         int[] arr = { 1,2,2,3,3,4,5,6};
+//          HashSet< Integer> set= new HashSet<>();
+//           for(int i=0;i< arr.length;i++){
+//             if(set.contains(i)){
+//     set.add(arr[i]);
+//     //       arr.add(i);
+//     //     }
+//     // }
+//             }
+//           }
+//     // set.add("ba");
+     
+//         System.out.println(set);
+//     }
+
+//                                                        hashmap
+// import java.util.HashSet;
+//     public static void main(String[] args) {
+//         // int[] arr = { 1,2,2,3,3,4,5,6};
+//          HashMap<String, Integer> map= new HashMap<>();
+//            map.put("id0",1);
+//  map.put("id1",2);
+     
+//         System.out.println(map.get("id0"));
+//     }
+
+import java.util.HashSet;
+    public static void main(String[] args) {
+        int[] arr = { 1,2,2,3,3,4,5,6};
+         HashSet<  Integer> map= new HashSet<>();
+          TreeSet<  Integer> map= new TreeSet<>();
+          for(int i:arr){
+            set.add(i);
+          }
+     
+        System.out.println( set);
     }
