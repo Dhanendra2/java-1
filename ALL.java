@@ -270,14 +270,50 @@
 //         System.out.println(map.get("id0"));
 //     }
 
-import java.util.HashSet;
-    public static void main(String[] args) {
-        int[] arr = { 1,2,2,3,3,4,5,6};
-         HashSet<  Integer> map= new HashSet<>();
-          TreeSet<  Integer> map= new TreeSet<>();
-          for(int i:arr){
-            set.add(i);
-          }
+// import java.util.HashSet;
+//     public static void main(String[] args) {
+//         int[] arr = { 1,2,2,3,3,4,5,6};
+//          HashSet<  Integer>set= new HashSet<>();
+//           TreeSet<  Integer> set= new TreeSet<>();
+//           for(int i:arr){
+//             set.add(i);
+//           }
      
-        System.out.println( set);
-    }
+//         System.out.println( set);
+//     }
+
+//                                      word programming word count
+ 
+import java.util.ArrayList;
+import java.util.Iterator;
+class ALL{
+        public static void main(String[] args) {
+                ArrayList<String> name=new ArrayList<>();
+                name.add("ravi");
+                name.add("anjali");
+                name.add("ram");
+                name.add("amiit");
+                name.add("priya");
+                Iterator<String>it= name.iterator();
+                while(it.hasNext()){
+                        String elem=it.next();
+                        System.out.println(elem);
+                        if(elem.startsWith("a")){
+                                it.remove();
+                        }
+                
+                System.out.println(name);
+                }
+        }
+}
+
+
+
+
+
+
+
+ 
+
+
+  
