@@ -284,29 +284,134 @@
 
 //                                      word programming word count
  
-import java.util.ArrayList;
-import java.util.Iterator;
-class ALL{
-        public static void main(String[] args) {
-                ArrayList<String> name=new ArrayList<>();
-                name.add("ravi");
-                name.add("anjali");
-                name.add("ram");
-                name.add("amiit");
-                name.add("priya");
-                Iterator<String>it= name.iterator();
-                while(it.hasNext()){
-                        String elem=it.next();
-                        System.out.println(elem);
-                        if(elem.startsWith("a")){
-                                it.remove();
-                        }
+// import java.util.ArrayList;
+// import java.util.Iterator;
+// class ALL{
+//         public static void main(String[] args) {
+//                 ArrayList<String> name=new ArrayList<>();
+//                 name.add("ravi");
+//                 name.add("Anjali");
+//                 name.add("ram");
+//                 name.add("amiit");
+//                 name.add("priya");
+//                 Iterator<String>it= name.iterator();
+//                 while(it.hasNext()){
+//                         String elem=it.next();
+//                         System.out.println(elem);
+//                         if(elem.startsWith( "A" )){
+//                                 it.remove();
+//                         }
                 
-                System.out.println(name);
-                }
+//                 System.out.println(name);
+//                 }
+//         }
+// }
+
+
+// import java.util.ArrayList;
+// import java.util.Iterator;
+// class ALL{
+//         public static void main(String[] args) {
+//                 ArrayList<String> name=new ArrayList<>();
+//                 name.add("ravi");
+//                 name.add("Anjali");
+//                 name.add("ram");
+//                 name.add("amiit");
+//                 name.add("priya");
+//                ListIterator<String> it= name.ListIterator();
+//                 while(it.hasNext()){
+//                         String elem=it.next();
+//                         System.out.println(elem);
+//                 }
+//                 System.out.println("pree");
+//                 while(it.hasPrevious()){
+//                         String lastValue= it.previous();
+//                         System.out.println(lastValue);
+//                 }
+                        
+//                 System.out.println(name);
+                
+                
+//         }
+// }
+
+// import java.util.ArrayList;
+// import java.util.ListIterator;
+// class ALL{
+//         public static void main(String[] args) {
+//                 ArrayList<String> name=new ArrayList<>();
+//                 name.add("ravi");
+//                 name.add("Anjali");
+//                 name.add("ram");
+//                 name.add("amiit");
+//                 name.add("priya");
+//                ListIterator <String> it= name.ListIterator();
+//                 while(it.hasNext()){
+//                         String elem=it.next();
+                        
+//                         // System.out.println(elem);
+//                 }
+//                 System.out.println("pree");
+//                 while(it.hasPrevious()){
+//                         String lastValue= it.previous();
+//                         System.out.println(lastValue);
+//                 }
+                        
+//                 System.out.println(name);
+//                 int count=0;
+//                 while(it.hasPrevious()){
+//                         String elem =it.previous();
+//                         count++;
+//                         if(count !=names.size()){
+//                                 it.set("hello");
+
+//                         }
+//                 }
+                
+//         }
+// }
+
+import java.util.ArrayList;
+import java.util.Collections;
+class Student implements Comparable<Student>{
+        int age;
+        String name;
+        public Student (int age,String name){
+                this.age=age;
+                this.name=name;
+
+        }
+        public String toString(){
+                return age+ " " +name;
+
+        }
+        public int compareTo(Student s){
+                return this.age-s.age;
+        }
+        }
+        class ALL{
+        public static void main(String[] args){
+                ArrayList<Student> list =new ArrayList<>();
+        list.add(new Student(17, "rahul"));
+        list.add(new Student(16, "rohit"));
+        list.add(new Student(11, "mohit"));
+        list.add(new Student(51, "om"));
+
+           Collections.sort(list);
+           for(Student s :list){
+            System.out.println(s.toString());
+           }
         }
 }
 
+
+
+
+
+ 
+
+
+  
 
 
 
