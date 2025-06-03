@@ -371,40 +371,329 @@
 //         }
 // }
 
-import java.util.ArrayList;
-import java.util.Collections;
-class Student implements Comparable<Student>{
-        int age;
-        String name;
-        public Student (int age,String name){
-                this.age=age;
-                this.name=name;
+//                             11 mohit
+//                             16 rohit
+//                             17 rahul
+//                              51 om print karo
 
-        }
-        public String toString(){
-                return age+ " " +name;
+// import java.util.ArrayList;
+// import java.util.Collections;
+// class Student implements Comparable<Student>{
+//         int age;
+//         String name;
+//         public Student (int age,String name){
+//                 this.age=age;
+//                 this.name=name;
 
-        }
-        public int compareTo(Student s){
-                return this.age-s.age;
-        }
-        }
-        class ALL{
-        public static void main(String[] args){
-                ArrayList<Student> list =new ArrayList<>();
-        list.add(new Student(17, "rahul"));
-        list.add(new Student(16, "rohit"));
-        list.add(new Student(11, "mohit"));
-        list.add(new Student(51, "om"));
+//         }
+//         public String toString(){
+//                 return age+ " " +name;
 
-           Collections.sort(list);
-           for(Student s :list){
-            System.out.println(s.toString());
-           }
+//         }
+//         public int compareTo(Student s){
+//                 return this.age-s.age;
+//         }
+//         }
+//         class ALL{
+//         public static void main(String[] args){
+//                 ArrayList<Student> list =new ArrayList<>();
+//         list.add(new Student(17, "rahul"));
+//         list.add(new Student(16, "rohit"));
+//         list.add(new Student(11, "mohit"));
+//         list.add(new Student(51, "om"));
+
+//            Collections.sort(list);
+//            for(Student s :list){
+//             System.out.println(s.toString());
+//            }
+//         }
+// }
+
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Comparator;
+// class Student{
+
+//         int age;
+//         String name;
+//         int rollNo;
+//         public Student (int age,String name,int rollNo){
+//                 this.age=age;
+//                 this.name=name;
+//                 this.rollNo=rollNo;
+//         }
+//         public String toString(){
+//                 return age+ " " +name + " "+ rollNo;
+
+//         }
+// }
+// class sortByName implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.name.compareTo(s2.name);
+
+//     }
+// }
+// class sortByAge implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.age-s2.age;
+
+//     }
+// }
+        
+//         class ALL{
+//         public static void main(String[] args){
+//                 ArrayList<Student> list =new ArrayList<>();
+//         list.add(new Student(17, "rahul" ,45));
+//         list.add(new Student(16, "rohit" , 34));
+//         list.add(new Student(11, "mohit", 55));
+//         list.add(new Student(51, "om",65));
+//         for(Student s:list){
+//                 System.out.println(s);
+//         }
+
+//            Collections.sort(list,new sortByAge());
+//            for(Student s2 :list){
+//             System.out.println( s2);
+//            }
+//         }
+// }
+
+//               : Sort by Age Ascending, then by Name Alphabetically
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Comparator;
+// class Student{
+
+//         int age;
+//         String name;
+//         int rollNo;
+//         public Student (int age,String name,int rollNo){
+//                 this.age=age;
+//                 this.name=name;
+//                 this.rollNo=rollNo;
+//         }
+//         public String toString(){
+//                 return age+ " " +name + " "+ rollNo;
+
+//         }
+// }
+// class sortByName implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.name.compareTo(s2.name);
+
+//     }
+// }
+// class sortByAge implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.age-s2.age;
+
+//     }
+// }
+        
+//         class ALL{
+//         public static void main(String[] args){
+//                 ArrayList<Student> list =new ArrayList<>();
+//         list.add(new Student(16, "rahul" ,45));
+//         list.add(new Student(16, "rohit" , 45));
+         
+//         // for(Student s:list){
+//         //         System.out.println(s);
+//         // }
+
+//            Collections.sort(list,new sortByAge());
+//            for(Student s2 :list){
+//             System.out.println( s2);
+//            }
+//         }
+// }
+
+//        Sort by Name Length using Comparator
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Comparator;
+// class Student{
+
+//         int age;
+//         String name;
+//         int rollNo;
+//         public Student (int age,String name,int rollNo){
+//                 this.age=age;
+//                 this.name=name;
+//                 this.rollNo=rollNo;
+//         }
+//         public String toString(){
+//                 return age+ " " +name + " "+ rollNo;
+
+//         }
+// }
+// class sortByName implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.name.compareTo(s2.name);
+
+//     }
+// }
+// class sortByAge implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.age-s2.age;
+
+//     }
+// }
+        
+//         class ALL{
+//         public static void main(String[] args){
+//                 ArrayList<Student> list =new ArrayList<>();
+//         list.add(new Student(16, "rahul" ,45));
+//         list.add(new Student(16, "rohitfgd" , 45));
+         
+//         // for(Student s:list){
+//         //         System.out.println(s);
+//         // }
+
+//            Collections.sort(list,new sortByAge());
+//            for(Student s2 :list){
+//             System.out.println( s2);
+//            }
+//         }
+// }
+//                Sort by Roll Number in Descending Order
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Comparator;
+// class Student{
+
+//         int age;
+//         String name;
+//         int rollNo;
+//         public Student (int age,String name,int rollNo){
+//                 this.age=age;
+//                 this.name=name;
+//                 this.rollNo=rollNo;
+//         }
+//         public String toString(){
+//                 return age+ " " +name + " "+ rollNo;
+
+//         }
+// }
+// class sortByName implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.name.compareTo(s2.name);
+
+//     }
+// }
+// class sortByAge implements  Comparator<Student>{
+//     public int compare(Student s1,Student s2){
+//         return s1.age-s2.age;
+
+//     }
+// }
+        
+//         class ALL{
+//         public static void main(String[] args){
+//                 ArrayList<Student> list =new ArrayList<>();
+//         list.add(new Student(16, "rahul" ,45));
+//         list.add(new Student(16, "rohitfgd" , 45));
+         
+//         // for(Student s:list){
+//         //         System.out.println(s);
+//         // }
+
+//            Collections.sort(list,new sortByAge());
+//            for(Student s2 :list){
+//             System.out.println( s2);
+//            }
+//         }
+// }
+
+// class MyThread extends Thread{
+//         public void run(){
+//                 System.out.println("hello");
+// try {
+//         Thread.sleep(4000);
+// } catch (Exception e) {
+//         // TODO: handle exception
+// }
+        
+//         System.out.println("hii");
+// }
+// }
+// class ALL{
+//         public static void main(String[] args) {
+//                 MyThread t1=new MyThread();
+//                 t1.start();
+//                 System.out.println("hii");
+//         }
+// }
+
+class FileDownload{
+        public static void download (String file) {
+                for(int i=1; i<=5; i++){
+                        System.out.println(file + " " + "downloading"+ (i*20)+ "%");
+                        try {
+                                Thread.sleep(2000);
+                        } catch (Exception e) {
+                                // TODO: handle exception
+                        }
+                }
+        
+        System.out.println(file + "done");
+}
+}
+class ALL{
+        public static void main(String[] args) {
+              FileDownload obj=new FileDownload(); 
+              obj.download("file A"); 
+                obj.download("file B"); 
         }
 }
 
+ 
 
+
+  
+
+
+
+
+
+
+ 
+
+
+  
+
+
+
+ 
+
+
+  
+
+
+
+
+
+
+ 
+
+
+  
+
+
+
+ 
+
+
+  
+
+
+
+
+
+
+ 
+
+
+  
 
 
 
