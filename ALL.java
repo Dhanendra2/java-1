@@ -624,27 +624,75 @@
 //         }
 // }
 
-class FileDownload{
-        public static void download (String file) {
-                for(int i=1; i<=5; i++){
-                        System.out.println(file + " " + "downloading"+ (i*20)+ "%");
-                        try {
-                                Thread.sleep(2000);
-                        } catch (Exception e) {
-                                // TODO: handle exception
-                        }
-                }
+// class FileDownload{
+//         public static void download (String file) {
+//                 for(int i=1; i<=5; i++){
+//                         System.out.println(file + " " + "downloading"+ (i*20)+ "%");
+//                         try {
+//                                 Thread.sleep(2000);
+//                         } catch (Exception e) {
+//                                 // TODO: handle exception
+//                         }
+//                 }
         
-        System.out.println(file + "done");
-}
+//         System.out.println(file + "done");
+// }
+// }
+// class ALL{
+//         public static void main(String[] args) {
+//               FileDownload obj=new FileDownload(); 
+//               obj.download("file A"); 
+//                 obj.download("file B"); 
+//         }
+// }
+//  class DownloadFile extends Thread{
+//         String fileName ;
+//         public DownloadFile(String fileName){
+//                 this.fileName=fileName;
+
+//         }
+//         public void run(){
+//                 for(int i=0;i<=5;i++){
+//                          System.out.println(fileName + " " + "downloading"+ (i*20)+ "%");
+//                         try {
+//                                  Thread.sleep(2000);
+//                          } catch (Exception e) {
+//                                  // TODO: handle exception
+//                          }
+//                  }
+//                         System.out.println(fileName + "done");
+//                 }
+//         }
+//         class ALL{
+//                 public static void main(String[] args) {
+//                    DownloadFile t1 =new DownloadFile("fileName A");
+//                      DownloadFile t2 =new DownloadFile("fileName B");
+
+//                      t1.start();
+//                      t2.start();
+//                 }
+//         }
+ 
+class MyRunnable impiements Runnable{
+        public void run(){
+                System.out.println(Thread.currentThread().getName()+"HIII");
+        }
 }
 class ALL{
         public static void main(String[] args) {
-              FileDownload obj=new FileDownload(); 
-              obj.download("file A"); 
-                obj.download("file B"); 
+                MyRunnable obj= new MyRunnable();
+                Thread t1=new Thread(obj);
+                t1.start();
         }
 }
+
+
+
+ 
+
+
+  
+
 
  
 
