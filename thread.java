@@ -110,14 +110,74 @@
 //         }
 // }
 
-class produce extends produce{
-        public void run(){
-                System.out.println("hii");
-        }
-}
+//  public class  thread{
+//         private boolean isSignalled=false;
+//         public synchronized void sendSignal(){
+//                 isSignalled=true;
+//                 System.out.println("producer: sending signal..");
+//                notify();
+
+//         }
+//         public synchronized void waitForSignal(){
+//                 while(!isSignalled){
+//                         try {
+//                                 System.out.println("consumer: waiting for signal...");
+//                                wait();
+//                         } catch (InterruptedException e) {
+//                                 // TODO: handle exception
+//                         }
+//                 }
+//                 System.out.println("consumer: go the signal! proceeding ");
+//         }
+// public static void main(String[] args) {
+//         thread obj = new  thread();
+
+//         Thread consumer = new Thread(() -> {
+//             obj.waitForSignal();
+//         });
+
+//         Thread producer = new Thread(() -> {
+//             try {
+//                 Thread.sleep(5000);
+//             } catch (InterruptedException e) {
+//             }
+//             obj.sendSignal();
+//         });
+
+//         consumer.start();
+//         producer.start(); 
+// }
+//         }
+ 
+// public class  thread{
+//         public static void main(String[] args) {
+//                 Runnable r =new Runnable(){
+//                         public void run(){
+//                                 System.out.println("runnable using anonymous class");
+//                         }
+//                 };
+//                 r.run();
+                
+//         }
+
+// public class RunnableLambda{
+//         public static void main(String[] args) {
+//                 Runnable r = ()-> System.out.println("runnable using lambda ");
+//                 r.run();
+//         }
+// }
+// }
+
+import java.util.ArrayList;
+import java.util.Collection;
+
 class thread{
         public static void main(String[] args) {
-                produce p1= new produce();
-                p1.start();
+                ArrayList <String> List = new ArrayList<>();
+                List.add("rahul");
+                List.add("rohan");
+                List.add("ramesh");
+                Collection.sort(List,(a,b)->a.compareTo(b));
+                System.out.println(List);
         }
 }
