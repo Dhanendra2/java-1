@@ -168,16 +168,31 @@
 // }
 // }
 
+// import java.util.ArrayList;
+// import java.util.Collection;
+
+// class thread{
+//         public static void main(String[] args) {
+//                 ArrayList <String> list = new ArrayList<>();
+//                 list.add("rahul");
+//                 list.add("rohan");
+//                 list.add("ramesh");
+//                 Collection.sort(list,(a,b)->a.compareTo(b));
+//                 System.out.println(list);
+//         }
+// }
 import java.util.ArrayList;
+import java.util.stream.*;
 import java.util.Collection;
 
 class thread{
         public static void main(String[] args) {
-                ArrayList <String> List = new ArrayList<>();
-                List.add("rahul");
-                List.add("rohan");
-                List.add("ramesh");
-                Collection.sort(List,(a,b)->a.compareTo(b));
-                System.out.println(List);
+                ArrayList <Integer> list = new ArrayList<>();
+                list.add(4);
+                list.add(3);
+                list.add(9);
+                 int sum=   list.stream().reduce(0,(a,b)->a+b);
+                  
+                 System.out.println(sum);
         }
 }
