@@ -181,18 +181,60 @@
 //                 System.out.println(list);
 //         }
 // }
-import java.util.ArrayList;
-import java.util.stream.*;
-import java.util.Collection;
+// import java.util.ArrayList;
+// import java.util.stream.*;
+// import java.util.Collection;
+
+// class thread{
+//         public static void main(String[] args) {
+//                 ArrayList <Integer> list = new ArrayList<>();
+//                 list.add(4);
+//                 list.add(3);
+//                 list.add(9);
+//                  int sum=   list.stream().reduce(0,(a,b)->a+b);
+                  
+//                  System.out.println(sum);
+//         }
+// }
+
+// import java.util.ArrayList;
+// import java.util.stream.*;
+// import java.util.Collection;
+
+// class thread{
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list =new ArrayList<>();
+//         list.add(1);
+//         list.add(4);
+//         list.add(6);
+//         list.add(9);
+//         list.add(2);
+
+//           int sum=  list.stream().reduce(0,(a,b)->a<b?a:b);
+//           System.out.println(sum);
+//  List<Integer> data= list.stream().
+// filter(a->a>2)
+//  .collect(Collectors.toList());
+//          System.out.println(data);
+              
+//     }
+// }
+
+
+ import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+ 
 
 class thread{
-        public static void main(String[] args) {
-                ArrayList <Integer> list = new ArrayList<>();
-                list.add(4);
-                list.add(3);
-                list.add(9);
-                 int sum=   list.stream().reduce(0,(a,b)->a+b);
-                  
-                 System.out.println(sum);
+    public static void main(String[] args) {
+        List<Integer> input =  Arrays.asList(1,2,3,4,5);
+        List<Integer>  result =  input.stream()
+        .filter(n->n%2==0)
+        .map(n->n*n)
+        .collect(Collectors.toList());
+          
+          System.out.println(result);
+           
         }
 }
