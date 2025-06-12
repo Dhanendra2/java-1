@@ -673,20 +673,68 @@
 //                 }
 //         }
  
-class MyRunnable impiements Runnable{
-        public void run(){
-                System.out.println(Thread.currentThread().getName()+"HIII");
-        }
-}
+// class MyRunnable implements Runnable{
+//         public void run(){
+//                 System.out.println(Thread.currentThread().getName()+"HIII");
+//         }
+// }
+// class ALL{
+//         public static void main(String[] args) {
+//                 MyRunnable obj= new MyRunnable();
+//                 Thread t1=new Thread(obj);
+//                 t1.start();
+//                System.out.println("hello");
+//         }
+// }
+
+//                                                       bank game
+// class WithdrawThread extends Thread{
+//         static int totalBalance=1000;
+//         int amount;
+//         public WithdrawThread(int amount){
+//                 this.amount=amount;
+//         }
+//         public void run(){
+//                 if(totalBalance>=amount){
+//                         System.out.println("your account xxxx. created=" + amount);
+//                         totalBalance-=amount;
+//                         System.out.println(totalBalance);
+//                 }
+//                 else{
+//                         System.out.println("not enough balance");
+
+//                 }
+//         }
+// }
+// class ALL{
+//         public static void main(String[] args) {
+//                 WithdrawThread obj=new WithdrawThread(800);
+//                 WithdrawThread obj1=new WithdrawThread(500);
+//                 Thread t1= new Thread(obj);
+//                  Thread t2= new Thread(obj1);
+//                 t1.start();
+//                 try {
+//                         t1.join();
+//                 } catch (Exception e) {
+//                         // TODO: handle exception
+//                         e.printStackTrace();
+//                 }
+//                 t2.start();
+//         }
+// }
 class ALL{
         public static void main(String[] args) {
-                MyRunnable obj= new MyRunnable();
-                Thread t1=new Thread(obj);
-                t1.start();
+                int [] [] arr ={ {1,2,3},
+                                  {4,5,6},
+                                {7,8,9}};
+                                for (int i = 0; i < arr.length; i++) {
+ for (int j = 0; j < arr[i].length; j++) {
+ System.out.print(arr[i][j] + " ");
+ }
+ System.out.println();
         }
 }
-
-
+}
 
  
 
